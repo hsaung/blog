@@ -15,6 +15,10 @@ class CreateHotnewsTable extends Migration
         Schema::create('hotnews', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();
+            $table->string('title');
+            $table->text('content');
+            $table->boolean('is_feature');
+            $table->integer('page_view');
         });
     }
 
