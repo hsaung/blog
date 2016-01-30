@@ -17,6 +17,8 @@ class CreatePostsTable extends Migration
             $table->timestamps();
             $table->string('title');
             $table->text('content');
+            $table->boolean('is_feature');
+            $table->integer('page_view');
         });
     }
 
